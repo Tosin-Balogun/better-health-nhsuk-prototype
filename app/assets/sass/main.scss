@@ -4,8 +4,31 @@
 // Components that are not in the NHS.UK frontend library
 @import 'components/list-border';
 @import 'components/related-nav';
+@import url(//https://fonts.google.com/specimen/Poppins?query=poppins);
 
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
-  
+.nhsuk-header{
+    background-color: #7ec3c3;
+}
+
+.nhsuk-header__service-name {
+    color: #2D2229;
+}
+
+body {
+    font-family: 'poppins' sans-serif;
+}
+
+.nhsuk-header__logo .nhsuk-logo__background {
+    fill: #005EB8;
+}
+
+.nhsuk-header__logo .nhsuk-logo__text {
+    fill: white;
+}
+
+.nhsuk-section__Intro {
+    background-color: white;
+}
