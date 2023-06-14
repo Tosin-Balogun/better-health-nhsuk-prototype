@@ -6,7 +6,8 @@
 @import 'components/related-nav';
 @import url(//https://fonts.google.com/specimen/Poppins?query=poppins);
 
-///////////////////////////////////////////
+///////////////////////////////
+/// ////////////
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
 .nhsuk-header{
@@ -32,3 +33,287 @@ body {
 .nhsuk-section__Intro {
     background-color: white;
 }
+
+// Better Health nav style
+
+nav {
+    background-color: #7ec3c3;
+}
+
+.bh-new-nav {
+    background-color: #7ec3c3;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #3f6262;
+}
+
+@media (max-width: 48.0525em) {
+    .bh-new-nav {
+        flex-wrap:wrap
+    }
+
+    .bh-new-nav .bh-new-nav__item {
+        flex: inherit
+    }
+}
+
+@media (min-width: 48.0525em) {
+    .bh-new-nav {
+        flex-direction:row;
+        align-items: stretch
+    }
+}
+
+@media (max-width: 40.0525em) {
+    .bh-new-nav {
+        border-bottom:0
+    }
+
+    .bh-new-nav .bh-new-nav__item {
+        width: 50%;
+        border-right: 1px solid #3f6262;
+        border-bottom: 1px solid #3f6262
+    }
+
+    .bh-new-nav .bh-new-nav__item:last-child,.bh-new-nav .bh-new-nav__item:nth-child(2) {
+        border-right: 0
+    }
+}
+
+.bh-new-nav .bh-new-nav__item {
+    margin: 0;
+    padding: 0
+}
+
+.bh-new-nav .bh-new-nav__item .bh-new-nav__link {
+    font-size: 1rem;
+    color: #000;
+    display: block;
+    line-height: 1.3;
+    padding: 12px 16px;
+    text-decoration: none;
+    height: 100%;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    box-shadow: none
+}
+
+@media (max-width: 48.0525em) {
+    .bh-new-nav .bh-new-nav__item .bh-new-nav__link__break {
+        display:block
+    }
+}
+
+.bh-new-nav .bh-new-nav__item .bh-new-nav__link:hover {
+    color: #fff;
+    background-color: #9f661d;
+    text-decoration: underline
+}
+
+.bh-new-nav .bh-new-nav__item .bh-new-nav__link:focus {
+    background-color: #ffeb3b;
+    border-bottom-color: #212b32;
+    outline: 4px solid transparent;
+    outline-offset: 4px;
+    color: #000;
+    box-shadow: none
+}
+
+.bh-new-nav .bh-new-nav__item .app-nav-active {
+    border-bottom-color: #000;
+    border-bottom-width: 6px;
+    outline: 4px solid transparent;
+    outline-offset: 4px;
+    color: #000;
+    box-shadow: none;
+    font-weight: 500
+}
+
+nav {
+    background-color: #7ec3c3
+}
+
+nav .bh-new-nav {
+    background-color: #7ec3c3;
+    border-top-color: #2d2229
+}
+
+nav .bh-new-nav .bh-new-nav__item .bh-new-nav__link:hover {
+    background-color: #fff;
+    color: #2d2229
+}
+
+nav .bh-new-nav .bh-new-nav__item .bh-new-nav__link:focus {
+    background-color: #fff
+}
+
+nav .bh-new-nav .bh-new-nav__item .app-nav-active {
+    background-color: #fff
+}
+
+@media (max-width: 40.0525em) {
+    nav .bh-new-nav .bh-new-nav__item {
+        width:33.33%;
+        border-right-color: #2d2229;
+        border-bottom-color: #2d2229
+    }
+
+    nav .bh-new-nav .bh-new-nav__item:nth-child(2) {
+        border-right: 1px solid #2d2229
+    }
+}
+
+// S4L logo styles
+
+
+#s4l_header.nhsuk-header .nhsuk-header__container .app-article-logo,#s4l_header.nhsuk-header .nhsuk-header__container .app-logo {
+    padding-bottom: 0
+}
+
+#s4l_header.nhsuk-header .nhsuk-header__container .app-article-logo a span,#s4l_header.nhsuk-header .nhsuk-header__container .app-logo a span {
+    color: #2d2229
+}
+
+#s4l_header.nhsuk-header .nhsuk-header__container .app-article-logo a:focus svg .a,#s4l_header.nhsuk-header .nhsuk-header__container .app-article-logo a:hover svg .a,#s4l_header.nhsuk-header .nhsuk-header__container .app-logo a:focus svg .a,#s4l_header.nhsuk-header .nhsuk-header__container .app-logo a:hover svg .a {
+    fill: #2d2229;
+    opacity: 1
+}
+
+#s4l_header.nhsuk-header .app-article-header {
+    display: flex;
+    justify-content: space-between
+}
+
+@media (max-width: 40.0525em) {
+    #s4l_header.nhsuk-header .app-article-header {
+        display:block
+    }
+}
+
+#s4l_header.nhsuk-header .app-article-header .app-article-logo {
+    flex-grow: 5
+}
+
+@media (max-width: 40.0525em) {
+    #s4l_header.nhsuk-header .app-article-header .app-article-logo {
+        display:inline-block
+    }
+}
+
+#s4l_header.nhsuk-header .app-article-header .app-article-logo a {
+    display: inline-block
+}
+
+#s4l_header.nhsuk-header .app-article-header .app-article-logo a:focus {
+    background-color: transparent;
+    box-shadow: none
+}
+
+#s4l_header.nhsuk-header .app-article-header .app-article-logo a:focus svg {
+    box-shadow: 0 0 0 4px #3155a5
+}
+
+#s4l_header.nhsuk-header .app-article-header .app-article-logo a .app-hero-logo {
+    width: 140px;
+    height: 85px
+}
+
+@media (max-width: 40.0525em) {
+    #s4l_header.nhsuk-header .app-article-header .app-article-logo a .app-hero-logo {
+        width:150px;
+        height: auto
+    }
+}
+
+// S4L header content
+
+@media (min-width: 40.0625em) {
+    .nhsuk-header__content {
+        float:right
+    }
+
+    .nhsuk-header__content .desktop-only {
+        display: block
+    }
+
+    .nhsuk-header__content .mobile-only {
+        display: none;
+        visibility: hidden
+    }
+
+    .nhsuk-header__content .nhsuk-header__search {
+        float: left
+    }
+}
+
+@media (max-width: 40.0625em) {
+    .nhsuk-header__content {
+        display:inline
+    }
+
+    .nhsuk-header__content .desktop-only {
+        display: none;
+        visibility: hidden
+    }
+
+    .nhsuk-header__content .mobile-only {
+        display: block;
+        float: right
+    }
+
+    .nhsuk-header__content .nhsuk-header__search .nhsuk-header__search-wrap.js-show {
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0
+    }
+    
+    .nhsuk-header__content .nhsuk-header__search .nhsuk-header__search-wrap.js-show .autocomplete__input {
+        border: 1px solid #fff;
+        height: 40px;
+        outline: 0;
+        padding: 0 16px;
+        border-radius: 4px
+    }
+
+    .nhsuk-header__content .nhsuk-header__search .nhsuk-header__search-wrap.js-show .autocomplete__input:focus {
+        width: calc(100% - 46px);
+        padding: 0 13px
+    }
+
+    .nhsuk-header__content .nhsuk-header__search .nhsuk-header__search-wrap.js-show .nhsuk-search__submit {
+        margin: 0;
+        padding: 8px 8px 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 4px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 4px;
+        float: right;
+        font-size: inherit;
+        line-height: inherit;
+        outline: 0;
+        height: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 9;
+        background-color: #f0f4f5;
+        border: 0
+    }
+
+    .nhsuk-header__content .nhsuk-header__search .nhsuk-header__search-wrap.js-show .nhsuk-search__submit .nhsuk-icon__search {
+        fill: #3155a5;
+        height: 27px;
+        width: 27px
+    }
+
+    .nhsuk-header__content .nhsuk-header__search .nhsuk-header__search-form {
+        padding: 0;
+        position: relative;
+        background-color: transparent!important
+    }
+}
+
+
+
